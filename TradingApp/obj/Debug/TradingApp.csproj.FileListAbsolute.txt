@@ -1,0 +1,14 @@
+D:\Program\Trading application\TradingApp\TradingApp\bin\Debug\TradingApp.exe.config
+D:\Program\Trading application\TradingApp\TradingApp\bin\Debug\TradingApp.exe
+D:\Program\Trading application\TradingApp\TradingApp\bin\Debug\TradingApp.pdb
+D:\Program\Trading application\TradingApp\TradingApp\obj\Debug\TradingApp.csproj.AssemblyReference.cache
+D:\Program\Trading application\TradingApp\TradingApp\obj\Debug\TradingApp.csproj.SuggestedBindingRedirects.cache
+D:\Program\Trading application\TradingApp\TradingApp\obj\Debug\TradingApp.Form1.resources
+D:\Program\Trading application\TradingApp\TradingApp\obj\Debug\TradingApp.Properties.Resources.resources
+D:\Program\Trading application\TradingApp\TradingApp\obj\Debug\TradingApp.csproj.GenerateResource.cache
+D:\Program\Trading application\TradingApp\TradingApp\obj\Debug\TradingApp.csproj.CoreCompileInputs.cache
+D:\Program\Trading application\TradingApp\TradingApp\obj\Debug\TradingApp.exe
+D:\Program\Trading application\TradingApp\TradingApp\obj\Debug\TradingApp.pdb
+D:\Program\Trading application\TradingApp\TradingApp\obj\Debug\TradingApp.Form4.resources
+D:\Program\Trading application\TradingApp\TradingApp\obj\Debug\TradingApp.Form3.resources
+D:\Program\Trading application\TradingApp\TradingApp\obj\Debug\TradingApp.Form2.resources
