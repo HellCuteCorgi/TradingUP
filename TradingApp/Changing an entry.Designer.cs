@@ -29,24 +29,25 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form4));
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.отделыBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tradingUPDataSet = new TradingApp.TradingUPDataSet();
             this.domainUpDown1 = new System.Windows.Forms.DomainUpDown();
             this.executionDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.orderComboBox = new System.Windows.Forms.ComboBox();
+            this.товарыBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.tradingUPDataSet = new TradingApp.TradingUPDataSet();
-            this.товарыBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.товарыTableAdapter = new TradingApp.TradingUPDataSetTableAdapters.ТоварыTableAdapter();
-            this.отделыBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.отделыTableAdapter = new TradingApp.TradingUPDataSetTableAdapters.ОтделыTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.отделыBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tradingUPDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.товарыBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.отделыBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // comboBox1
@@ -59,6 +60,16 @@
             this.comboBox1.Size = new System.Drawing.Size(200, 21);
             this.comboBox1.TabIndex = 61;
             this.comboBox1.ValueMember = "Код";
+            // 
+            // отделыBindingSource
+            // 
+            this.отделыBindingSource.DataMember = "Отделы";
+            this.отделыBindingSource.DataSource = this.tradingUPDataSet;
+            // 
+            // tradingUPDataSet
+            // 
+            this.tradingUPDataSet.DataSetName = "TradingUPDataSet";
+            this.tradingUPDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // domainUpDown1
             // 
@@ -85,6 +96,11 @@
             this.orderComboBox.Size = new System.Drawing.Size(200, 21);
             this.orderComboBox.TabIndex = 58;
             this.orderComboBox.ValueMember = "Артикул товара";
+            // 
+            // товарыBindingSource
+            // 
+            this.товарыBindingSource.DataMember = "Товары";
+            this.товарыBindingSource.DataSource = this.tradingUPDataSet;
             // 
             // button2
             // 
@@ -141,24 +157,9 @@
             this.label1.TabIndex = 52;
             this.label1.Text = "Артикул товара";
             // 
-            // tradingUPDataSet
-            // 
-            this.tradingUPDataSet.DataSetName = "TradingUPDataSet";
-            this.tradingUPDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // товарыBindingSource
-            // 
-            this.товарыBindingSource.DataMember = "Товары";
-            this.товарыBindingSource.DataSource = this.tradingUPDataSet;
-            // 
             // товарыTableAdapter
             // 
             this.товарыTableAdapter.ClearBeforeFill = true;
-            // 
-            // отделыBindingSource
-            // 
-            this.отделыBindingSource.DataMember = "Отделы";
-            this.отделыBindingSource.DataSource = this.tradingUPDataSet;
             // 
             // отделыTableAdapter
             // 
@@ -180,13 +181,14 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form4";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Изменение записи";
             this.Load += new System.EventHandler(this.Form4_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.отделыBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tradingUPDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.товарыBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.отделыBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -1,12 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace TradingApp
@@ -83,15 +76,19 @@ namespace TradingApp
 
         private void delButt_Click(object sender, EventArgs e)
         {
-            int row = productsDataGridView.CurrentCell.RowIndex;
-            string s1 = productsDataGridView[0, row].Value.ToString();
-            string ComDel = " Delete from [Товары] where [Артикул товара] = " + s1;
+            DialogResult dialog = MessageBox.Show("Вы уверены в удалении записи?", "Удаление", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (dialog == DialogResult.Yes)
+            {
+                int row = productsDataGridView.CurrentCell.RowIndex;
+                string s1 = productsDataGridView[0, row].Value.ToString();
+                string ComDel = " Delete from [Товары] where [Артикул товара] = " + s1;
 
-            SqlCommand cmd1 = new SqlCommand(ComDel, Connection);
-            Connection.Open();
-            cmd1.ExecuteNonQuery();
-            Connection.Close();
-            this.товарыTableAdapter.Fill(this.tradingUPDataSet.Товары);
+                SqlCommand cmd1 = new SqlCommand(ComDel, Connection);
+                Connection.Open();
+                cmd1.ExecuteNonQuery();
+                Connection.Close();
+                this.товарыTableAdapter.Fill(this.tradingUPDataSet.Товары);
+            }
         }
 
         private void addButt2_Click(object sender, EventArgs e)
@@ -154,15 +151,19 @@ namespace TradingApp
 
         private void delButt2_Click(object sender, EventArgs e)
         {
-            int row = productsDataGridView.CurrentCell.RowIndex;
-            string s1 = productsDataGridView[0, row].Value.ToString();
-            string ComDel = " Delete from [Отделы] where [Код] = " + s1;
+            DialogResult dialog = MessageBox.Show("Вы уверены в удалении записи?", "Удаление", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (dialog == DialogResult.Yes)
+            {
+                int row = productsDataGridView.CurrentCell.RowIndex;
+                string s1 = productsDataGridView[0, row].Value.ToString();
+                string ComDel = " Delete from [Отделы] where [Код] = " + s1;
 
-            SqlCommand cmd1 = new SqlCommand(ComDel, Connection);
-            Connection.Open();
-            cmd1.ExecuteNonQuery();
-            Connection.Close();
-            this.отделыViewTableAdapter.Fill(this.tradingUPDataSet.ОтделыView);
+                SqlCommand cmd1 = new SqlCommand(ComDel, Connection);
+                Connection.Open();
+                cmd1.ExecuteNonQuery();
+                Connection.Close();
+                this.отделыViewTableAdapter.Fill(this.tradingUPDataSet.ОтделыView);
+            }
         }
 
         private void addButt4_Click(object sender, EventArgs e)
@@ -231,15 +232,19 @@ namespace TradingApp
 
         private void delButt3_Click(object sender, EventArgs e)
         {
-            int row = staffDataGridView.CurrentCell.RowIndex;
-            string s1 = staffDataGridView[0, row].Value.ToString();
-            string ComDel = " Delete from [Сотрудники] where [Логин] = " + s1;
+            DialogResult dialog = MessageBox.Show("Вы уверены в удалении записи?", "Удаление", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (dialog == DialogResult.Yes)
+            {
+                int row = staffDataGridView.CurrentCell.RowIndex;
+                string s1 = staffDataGridView[0, row].Value.ToString();
+                string ComDel = " Delete from [Сотрудники] where [Логин] = " + s1;
 
-            SqlCommand cmd1 = new SqlCommand(ComDel, Connection);
-            Connection.Open();
-            cmd1.ExecuteNonQuery();
-            Connection.Close();
-            this.сотрудникиTableAdapter.Fill(this.tradingUPDataSet.Сотрудники);
+                SqlCommand cmd1 = new SqlCommand(ComDel, Connection);
+                Connection.Open();
+                cmd1.ExecuteNonQuery();
+                Connection.Close();
+                this.сотрудникиTableAdapter.Fill(this.tradingUPDataSet.Сотрудники);
+            }
         }
 
         private void changeButt4_Click(object sender, EventArgs e)
@@ -255,18 +260,22 @@ namespace TradingApp
 
         private void delButt4_Click(object sender, EventArgs e)
         {
-            int row = versionsDataGridView.CurrentCell.RowIndex;
-            string s1 = versionsDataGridView[0, row].Value.ToString();
-            string s2 = versionsDataGridView[1, row].Value.ToString();
-            string s3 = versionsDataGridView[2, row].Value.ToString();
-            string s4 = versionsDataGridView[3, row].Value.ToString();
-            string ComDel = " Delete from [Продажи] where [Артикул товара] = " + s1 + " AND [Отдел] = '" + s2 + "'AND [Дата продажи] = " + s3 + "AND [Количество] = '" + s4;
+            DialogResult dialog = MessageBox.Show("Вы уверены в удалении записи?", "Удаление", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (dialog == DialogResult.Yes)
+            {
+                int row = versionsDataGridView.CurrentCell.RowIndex;
+                string s1 = versionsDataGridView[0, row].Value.ToString();
+                string s2 = versionsDataGridView[1, row].Value.ToString();
+                string s3 = versionsDataGridView[2, row].Value.ToString();
+                string s4 = versionsDataGridView[3, row].Value.ToString();
+                string ComDel = " Delete from [Продажи] where [Артикул товара] = " + s1 + " AND [Отдел] = '" + s2 + "'AND [Дата продажи] = " + s3 + "AND [Количество] = '" + s4;
 
-            SqlCommand cmd1 = new SqlCommand(ComDel, Connection);
-            Connection.Open();
-            cmd1.ExecuteNonQuery();
-            Connection.Close();
-            this.продажиTableAdapter.Fill(this.tradingUPDataSet.Продажи);
+                SqlCommand cmd1 = new SqlCommand(ComDel, Connection);
+                Connection.Open();
+                cmd1.ExecuteNonQuery();
+                Connection.Close();
+                this.продажиTableAdapter.Fill(this.tradingUPDataSet.Продажи);
+            }
         }
 
         private void exitBtn_Click(object sender, EventArgs e)
@@ -281,8 +290,8 @@ namespace TradingApp
             int row = versionsDataGridView.CurrentCell.RowIndex;
             string s1 = versionsDataGridView[0, row].Value.ToString();
             SqlCommand command1 = new SqlCommand("SELECT [Наименование] FROM [Товары] WHERE [Артикул товара] = '" + s1 + "'", Connection);
-            SqlCommand command2 = new SqlCommand("SELECT [Единица измерения] FROM [Сотрудники] WHERE [Артикул товара] = '" + s1 + "'", Connection);
-            SqlCommand command3 = new SqlCommand("SELECT [Розничная цена] FROM [Сотрудники] WHERE [Артикул товара] = '" + s1 + "'", Connection);
+            SqlCommand command2 = new SqlCommand("SELECT [Единица измерения] FROM [Товары] WHERE [Артикул товара] = '" + s1 + "'", Connection);
+            SqlCommand command3 = new SqlCommand("SELECT [Розничная цена] FROM [Товары] WHERE [Артикул товара] = '" + s1 + "'", Connection);
 
             string s2 = versionsDataGridView[1, row].Value.ToString();
             SqlCommand command4 = new SqlCommand("SELECT [Наименование] FROM [Отделы] WHERE [Код] = '" + s2 + "'", Connection);
@@ -293,12 +302,12 @@ namespace TradingApp
             Connection.Open();
             name = (string)command1.ExecuteScalar();
             unit = (string)command2.ExecuteScalar();
-            price = (string)command3.ExecuteScalar();
+            price = command3.ExecuteScalar().ToString();
 
             nameK = (string)command4.ExecuteScalar();
             director = (string)command5.ExecuteScalar();
             phone = (string)command6.ExecuteScalar();
-            volume = (string)command7.ExecuteScalar();
+            volume = command7.ExecuteScalar().ToString();
             Connection.Close();
 
             staffL.Text = "Наименование: " + name + "\nЕдиница измерения: " + unit + "\nРозничная цена: " + price;

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.roleTC = new System.Windows.Forms.TabControl();
             this.productsTP = new System.Windows.Forms.TabPage();
             this.addButt = new System.Windows.Forms.Button();
@@ -54,6 +55,7 @@
             this.объемРеализацииВДеньDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.отделыViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.versionsTP = new System.Windows.Forms.TabPage();
+            this.button1 = new System.Windows.Forms.Button();
             this.orderL = new System.Windows.Forms.Label();
             this.staffL = new System.Windows.Forms.Label();
             this.addButt4 = new System.Windows.Forms.Button();
@@ -84,7 +86,6 @@
             this.отделыViewTableAdapter = new TradingApp.TradingUPDataSetTableAdapters.ОтделыViewTableAdapter();
             this.продажиTableAdapter = new TradingApp.TradingUPDataSetTableAdapters.ПродажиTableAdapter();
             this.сотрудникиTableAdapter = new TradingApp.TradingUPDataSetTableAdapters.СотрудникиTableAdapter();
-            this.button1 = new System.Windows.Forms.Button();
             this.roleTC.SuspendLayout();
             this.productsTP.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.productsDataGridView)).BeginInit();
@@ -339,6 +340,18 @@
             this.versionsTP.TabIndex = 2;
             this.versionsTP.Text = "Продажи";
             this.versionsTP.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(227)))), ((int)(((byte)(131)))));
+            this.button1.Location = new System.Drawing.Point(451, 256);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(119, 46);
+            this.button1.TabIndex = 24;
+            this.button1.Text = "Обновить таблицу";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // orderL
             // 
@@ -613,18 +626,6 @@
             // 
             this.сотрудникиTableAdapter.ClearBeforeFill = true;
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(227)))), ((int)(((byte)(131)))));
-            this.button1.Location = new System.Drawing.Point(451, 256);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(119, 46);
-            this.button1.TabIndex = 24;
-            this.button1.Text = "Обновить таблицу";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -637,6 +638,7 @@
             this.Controls.Add(this.defRoleL);
             this.Controls.Add(this.defNameL);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Главная страница";

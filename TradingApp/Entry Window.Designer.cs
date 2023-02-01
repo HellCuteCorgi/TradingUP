@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.enterBtn = new System.Windows.Forms.Button();
             this.passSeeBtn = new System.Windows.Forms.Button();
             this.passTB = new System.Windows.Forms.TextBox();
@@ -113,6 +114,7 @@
             this.Controls.Add(this.logTB);
             this.Controls.Add(this.logL);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Окно входа";
