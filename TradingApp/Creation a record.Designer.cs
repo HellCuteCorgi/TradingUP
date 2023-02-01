@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.domainUpDown1 = new System.Windows.Forms.DomainUpDown();
             this.executionDateTimePicker = new System.Windows.Forms.DateTimePicker();
@@ -38,10 +39,19 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.tradingUPDataSet = new TradingApp.TradingUPDataSet();
+            this.товарыBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.товарыTableAdapter = new TradingApp.TradingUPDataSetTableAdapters.ТоварыTableAdapter();
+            this.отделыBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.отделыTableAdapter = new TradingApp.TradingUPDataSetTableAdapters.ОтделыTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.tradingUPDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.товарыBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.отделыBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // comboBox1
             // 
+            this.comboBox1.DataSource = this.отделыBindingSource;
             this.comboBox1.DisplayMember = "Наименование";
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(155, 65);
@@ -66,6 +76,7 @@
             // 
             // orderComboBox
             // 
+            this.orderComboBox.DataSource = this.товарыBindingSource;
             this.orderComboBox.DisplayMember = "Наименование";
             this.orderComboBox.FormattingEnabled = true;
             this.orderComboBox.Location = new System.Drawing.Point(155, 40);
@@ -82,6 +93,7 @@
             this.button2.TabIndex = 47;
             this.button2.Text = "Отчистить";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -91,6 +103,7 @@
             this.button1.TabIndex = 46;
             this.button1.Text = "Сохранить";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label3
             // 
@@ -128,6 +141,29 @@
             this.label1.TabIndex = 42;
             this.label1.Text = "Артикул товара";
             // 
+            // tradingUPDataSet
+            // 
+            this.tradingUPDataSet.DataSetName = "TradingUPDataSet";
+            this.tradingUPDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // товарыBindingSource
+            // 
+            this.товарыBindingSource.DataMember = "Товары";
+            this.товарыBindingSource.DataSource = this.tradingUPDataSet;
+            // 
+            // товарыTableAdapter
+            // 
+            this.товарыTableAdapter.ClearBeforeFill = true;
+            // 
+            // отделыBindingSource
+            // 
+            this.отделыBindingSource.DataMember = "Отделы";
+            this.отделыBindingSource.DataSource = this.tradingUPDataSet;
+            // 
+            // отделыTableAdapter
+            // 
+            this.отделыTableAdapter.ClearBeforeFill = true;
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -147,6 +183,10 @@
             this.Name = "Form3";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Создание записи";
+            this.Load += new System.EventHandler(this.Form3_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.tradingUPDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.товарыBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.отделыBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -164,5 +204,10 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private TradingUPDataSet tradingUPDataSet;
+        private System.Windows.Forms.BindingSource товарыBindingSource;
+        private TradingUPDataSetTableAdapters.ТоварыTableAdapter товарыTableAdapter;
+        private System.Windows.Forms.BindingSource отделыBindingSource;
+        private TradingUPDataSetTableAdapters.ОтделыTableAdapter отделыTableAdapter;
     }
 }

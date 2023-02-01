@@ -35,17 +35,34 @@
             this.delButt = new System.Windows.Forms.Button();
             this.changeButt = new System.Windows.Forms.Button();
             this.productsDataGridView = new System.Windows.Forms.DataGridView();
+            this.артикулТовараDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.наименованиеDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.единицаИзмеренияDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.розничнаяЦенаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.товарыBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tradingUPDataSet = new TradingApp.TradingUPDataSet();
             this.ordersTP = new System.Windows.Forms.TabPage();
             this.label1 = new System.Windows.Forms.Label();
             this.delButt2 = new System.Windows.Forms.Button();
             this.addButt2 = new System.Windows.Forms.Button();
             this.changeButt2 = new System.Windows.Forms.Button();
             this.ordersDataGridView = new System.Windows.Forms.DataGridView();
+            this.кодDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.наименованиеDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.фИОЗаведующегоDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.телефонDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.объемРеализацииВДеньDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.отделыViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.versionsTP = new System.Windows.Forms.TabPage();
             this.orderL = new System.Windows.Forms.Label();
             this.staffL = new System.Windows.Forms.Label();
             this.addButt4 = new System.Windows.Forms.Button();
             this.versionsDataGridView = new System.Windows.Forms.DataGridView();
+            this.артикулТовараDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.отделDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.датаПродажиDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.количествоDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.продажиBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.delButt4 = new System.Windows.Forms.Button();
             this.changeButt4 = new System.Windows.Forms.Button();
             this.staffTP = new System.Windows.Forms.TabPage();
@@ -53,50 +70,34 @@
             this.delButt3 = new System.Windows.Forms.Button();
             this.changeButt3 = new System.Windows.Forms.Button();
             this.staffDataGridView = new System.Windows.Forms.DataGridView();
+            this.логинDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.парольDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.фИОDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.должностьDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.сотрудникиBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.exitBtn = new System.Windows.Forms.Button();
             this.roleL = new System.Windows.Forms.Label();
             this.nameL = new System.Windows.Forms.Label();
             this.defRoleL = new System.Windows.Forms.Label();
             this.defNameL = new System.Windows.Forms.Label();
-            this.tradingUPDataSet = new TradingApp.TradingUPDataSet();
-            this.товарыBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.товарыTableAdapter = new TradingApp.TradingUPDataSetTableAdapters.ТоварыTableAdapter();
-            this.артикулТовараDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.наименованиеDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.единицаИзмеренияDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.розничнаяЦенаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.отделыViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.отделыViewTableAdapter = new TradingApp.TradingUPDataSetTableAdapters.ОтделыViewTableAdapter();
-            this.кодDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.наименованиеDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.фИОЗаведующегоDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.телефонDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.объемРеализацииВДеньDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.продажиBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.продажиTableAdapter = new TradingApp.TradingUPDataSetTableAdapters.ПродажиTableAdapter();
-            this.артикулТовараDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.отделDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.датаПродажиDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.количествоDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.сотрудникиBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.сотрудникиTableAdapter = new TradingApp.TradingUPDataSetTableAdapters.СотрудникиTableAdapter();
-            this.логинDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.парольDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.фИОDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.должностьDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button1 = new System.Windows.Forms.Button();
             this.roleTC.SuspendLayout();
             this.productsTP.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.productsDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.товарыBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tradingUPDataSet)).BeginInit();
             this.ordersTP.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ordersDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.отделыViewBindingSource)).BeginInit();
             this.versionsTP.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.versionsDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.продажиBindingSource)).BeginInit();
             this.staffTP.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.staffDataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tradingUPDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.товарыBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.отделыViewBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.продажиBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.сотрудникиBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -177,6 +178,41 @@
             this.productsDataGridView.Size = new System.Drawing.Size(449, 293);
             this.productsDataGridView.TabIndex = 0;
             // 
+            // артикулТовараDataGridViewTextBoxColumn
+            // 
+            this.артикулТовараDataGridViewTextBoxColumn.DataPropertyName = "Артикул товара";
+            this.артикулТовараDataGridViewTextBoxColumn.HeaderText = "Артикул товара";
+            this.артикулТовараDataGridViewTextBoxColumn.Name = "артикулТовараDataGridViewTextBoxColumn";
+            this.артикулТовараDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // наименованиеDataGridViewTextBoxColumn
+            // 
+            this.наименованиеDataGridViewTextBoxColumn.DataPropertyName = "Наименование";
+            this.наименованиеDataGridViewTextBoxColumn.HeaderText = "Наименование";
+            this.наименованиеDataGridViewTextBoxColumn.Name = "наименованиеDataGridViewTextBoxColumn";
+            // 
+            // единицаИзмеренияDataGridViewTextBoxColumn
+            // 
+            this.единицаИзмеренияDataGridViewTextBoxColumn.DataPropertyName = "Единица измерения";
+            this.единицаИзмеренияDataGridViewTextBoxColumn.HeaderText = "Единица измерения";
+            this.единицаИзмеренияDataGridViewTextBoxColumn.Name = "единицаИзмеренияDataGridViewTextBoxColumn";
+            // 
+            // розничнаяЦенаDataGridViewTextBoxColumn
+            // 
+            this.розничнаяЦенаDataGridViewTextBoxColumn.DataPropertyName = "Розничная цена";
+            this.розничнаяЦенаDataGridViewTextBoxColumn.HeaderText = "Розничная цена";
+            this.розничнаяЦенаDataGridViewTextBoxColumn.Name = "розничнаяЦенаDataGridViewTextBoxColumn";
+            // 
+            // товарыBindingSource
+            // 
+            this.товарыBindingSource.DataMember = "Товары";
+            this.товарыBindingSource.DataSource = this.tradingUPDataSet;
+            // 
+            // tradingUPDataSet
+            // 
+            this.tradingUPDataSet.DataSetName = "TradingUPDataSet";
+            this.tradingUPDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // ordersTP
             // 
             this.ordersTP.Controls.Add(this.label1);
@@ -253,8 +289,44 @@
             this.ordersDataGridView.Size = new System.Drawing.Size(544, 293);
             this.ordersDataGridView.TabIndex = 0;
             // 
+            // кодDataGridViewTextBoxColumn
+            // 
+            this.кодDataGridViewTextBoxColumn.DataPropertyName = "Код";
+            this.кодDataGridViewTextBoxColumn.HeaderText = "Код";
+            this.кодDataGridViewTextBoxColumn.Name = "кодDataGridViewTextBoxColumn";
+            // 
+            // наименованиеDataGridViewTextBoxColumn1
+            // 
+            this.наименованиеDataGridViewTextBoxColumn1.DataPropertyName = "Наименование";
+            this.наименованиеDataGridViewTextBoxColumn1.HeaderText = "Наименование";
+            this.наименованиеDataGridViewTextBoxColumn1.Name = "наименованиеDataGridViewTextBoxColumn1";
+            // 
+            // фИОЗаведующегоDataGridViewTextBoxColumn
+            // 
+            this.фИОЗаведующегоDataGridViewTextBoxColumn.DataPropertyName = "ФИО заведующего";
+            this.фИОЗаведующегоDataGridViewTextBoxColumn.HeaderText = "ФИО заведующего";
+            this.фИОЗаведующегоDataGridViewTextBoxColumn.Name = "фИОЗаведующегоDataGridViewTextBoxColumn";
+            // 
+            // телефонDataGridViewTextBoxColumn
+            // 
+            this.телефонDataGridViewTextBoxColumn.DataPropertyName = "Телефон";
+            this.телефонDataGridViewTextBoxColumn.HeaderText = "Телефон";
+            this.телефонDataGridViewTextBoxColumn.Name = "телефонDataGridViewTextBoxColumn";
+            // 
+            // объемРеализацииВДеньDataGridViewTextBoxColumn
+            // 
+            this.объемРеализацииВДеньDataGridViewTextBoxColumn.DataPropertyName = "Объем реализации в день";
+            this.объемРеализацииВДеньDataGridViewTextBoxColumn.HeaderText = "Объем реализации в день";
+            this.объемРеализацииВДеньDataGridViewTextBoxColumn.Name = "объемРеализацииВДеньDataGridViewTextBoxColumn";
+            // 
+            // отделыViewBindingSource
+            // 
+            this.отделыViewBindingSource.DataMember = "ОтделыView";
+            this.отделыViewBindingSource.DataSource = this.tradingUPDataSet;
+            // 
             // versionsTP
             // 
+            this.versionsTP.Controls.Add(this.button1);
             this.versionsTP.Controls.Add(this.orderL);
             this.versionsTP.Controls.Add(this.staffL);
             this.versionsTP.Controls.Add(this.addButt4);
@@ -319,6 +391,35 @@
             this.versionsDataGridView.Size = new System.Drawing.Size(443, 299);
             this.versionsDataGridView.TabIndex = 0;
             this.versionsDataGridView.Click += new System.EventHandler(this.versionsDataGridView_Click);
+            // 
+            // артикулТовараDataGridViewTextBoxColumn1
+            // 
+            this.артикулТовараDataGridViewTextBoxColumn1.DataPropertyName = "Артикул товара";
+            this.артикулТовараDataGridViewTextBoxColumn1.HeaderText = "Артикул товара";
+            this.артикулТовараDataGridViewTextBoxColumn1.Name = "артикулТовараDataGridViewTextBoxColumn1";
+            // 
+            // отделDataGridViewTextBoxColumn
+            // 
+            this.отделDataGridViewTextBoxColumn.DataPropertyName = "Отдел";
+            this.отделDataGridViewTextBoxColumn.HeaderText = "Отдел";
+            this.отделDataGridViewTextBoxColumn.Name = "отделDataGridViewTextBoxColumn";
+            // 
+            // датаПродажиDataGridViewTextBoxColumn
+            // 
+            this.датаПродажиDataGridViewTextBoxColumn.DataPropertyName = "Дата продажи";
+            this.датаПродажиDataGridViewTextBoxColumn.HeaderText = "Дата продажи";
+            this.датаПродажиDataGridViewTextBoxColumn.Name = "датаПродажиDataGridViewTextBoxColumn";
+            // 
+            // количествоDataGridViewTextBoxColumn
+            // 
+            this.количествоDataGridViewTextBoxColumn.DataPropertyName = "Количество";
+            this.количествоDataGridViewTextBoxColumn.HeaderText = "Количество";
+            this.количествоDataGridViewTextBoxColumn.Name = "количествоDataGridViewTextBoxColumn";
+            // 
+            // продажиBindingSource
+            // 
+            this.продажиBindingSource.DataMember = "Продажи";
+            this.продажиBindingSource.DataSource = this.tradingUPDataSet;
             // 
             // delButt4
             // 
@@ -406,6 +507,35 @@
             this.staffDataGridView.Size = new System.Drawing.Size(543, 299);
             this.staffDataGridView.TabIndex = 0;
             // 
+            // логинDataGridViewTextBoxColumn
+            // 
+            this.логинDataGridViewTextBoxColumn.DataPropertyName = "Логин";
+            this.логинDataGridViewTextBoxColumn.HeaderText = "Логин";
+            this.логинDataGridViewTextBoxColumn.Name = "логинDataGridViewTextBoxColumn";
+            // 
+            // парольDataGridViewTextBoxColumn
+            // 
+            this.парольDataGridViewTextBoxColumn.DataPropertyName = "Пароль";
+            this.парольDataGridViewTextBoxColumn.HeaderText = "Пароль";
+            this.парольDataGridViewTextBoxColumn.Name = "парольDataGridViewTextBoxColumn";
+            // 
+            // фИОDataGridViewTextBoxColumn
+            // 
+            this.фИОDataGridViewTextBoxColumn.DataPropertyName = "ФИО";
+            this.фИОDataGridViewTextBoxColumn.HeaderText = "ФИО";
+            this.фИОDataGridViewTextBoxColumn.Name = "фИОDataGridViewTextBoxColumn";
+            // 
+            // должностьDataGridViewTextBoxColumn
+            // 
+            this.должностьDataGridViewTextBoxColumn.DataPropertyName = "Должность";
+            this.должностьDataGridViewTextBoxColumn.HeaderText = "Должность";
+            this.должностьDataGridViewTextBoxColumn.Name = "должностьDataGridViewTextBoxColumn";
+            // 
+            // сотрудникиBindingSource
+            // 
+            this.сотрудникиBindingSource.DataMember = "Сотрудники";
+            this.сотрудникиBindingSource.DataSource = this.tradingUPDataSet;
+            // 
             // exitBtn
             // 
             this.exitBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(227)))), ((int)(((byte)(131)))));
@@ -467,149 +597,33 @@
             this.defNameL.Text = "ФИО:";
             this.defNameL.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // tradingUPDataSet
-            // 
-            this.tradingUPDataSet.DataSetName = "TradingUPDataSet";
-            this.tradingUPDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // товарыBindingSource
-            // 
-            this.товарыBindingSource.DataMember = "Товары";
-            this.товарыBindingSource.DataSource = this.tradingUPDataSet;
-            // 
             // товарыTableAdapter
             // 
             this.товарыTableAdapter.ClearBeforeFill = true;
-            // 
-            // артикулТовараDataGridViewTextBoxColumn
-            // 
-            this.артикулТовараDataGridViewTextBoxColumn.DataPropertyName = "Артикул товара";
-            this.артикулТовараDataGridViewTextBoxColumn.HeaderText = "Артикул товара";
-            this.артикулТовараDataGridViewTextBoxColumn.Name = "артикулТовараDataGridViewTextBoxColumn";
-            this.артикулТовараDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // наименованиеDataGridViewTextBoxColumn
-            // 
-            this.наименованиеDataGridViewTextBoxColumn.DataPropertyName = "Наименование";
-            this.наименованиеDataGridViewTextBoxColumn.HeaderText = "Наименование";
-            this.наименованиеDataGridViewTextBoxColumn.Name = "наименованиеDataGridViewTextBoxColumn";
-            // 
-            // единицаИзмеренияDataGridViewTextBoxColumn
-            // 
-            this.единицаИзмеренияDataGridViewTextBoxColumn.DataPropertyName = "Единица измерения";
-            this.единицаИзмеренияDataGridViewTextBoxColumn.HeaderText = "Единица измерения";
-            this.единицаИзмеренияDataGridViewTextBoxColumn.Name = "единицаИзмеренияDataGridViewTextBoxColumn";
-            // 
-            // розничнаяЦенаDataGridViewTextBoxColumn
-            // 
-            this.розничнаяЦенаDataGridViewTextBoxColumn.DataPropertyName = "Розничная цена";
-            this.розничнаяЦенаDataGridViewTextBoxColumn.HeaderText = "Розничная цена";
-            this.розничнаяЦенаDataGridViewTextBoxColumn.Name = "розничнаяЦенаDataGridViewTextBoxColumn";
-            // 
-            // отделыViewBindingSource
-            // 
-            this.отделыViewBindingSource.DataMember = "ОтделыView";
-            this.отделыViewBindingSource.DataSource = this.tradingUPDataSet;
             // 
             // отделыViewTableAdapter
             // 
             this.отделыViewTableAdapter.ClearBeforeFill = true;
             // 
-            // кодDataGridViewTextBoxColumn
-            // 
-            this.кодDataGridViewTextBoxColumn.DataPropertyName = "Код";
-            this.кодDataGridViewTextBoxColumn.HeaderText = "Код";
-            this.кодDataGridViewTextBoxColumn.Name = "кодDataGridViewTextBoxColumn";
-            // 
-            // наименованиеDataGridViewTextBoxColumn1
-            // 
-            this.наименованиеDataGridViewTextBoxColumn1.DataPropertyName = "Наименование";
-            this.наименованиеDataGridViewTextBoxColumn1.HeaderText = "Наименование";
-            this.наименованиеDataGridViewTextBoxColumn1.Name = "наименованиеDataGridViewTextBoxColumn1";
-            // 
-            // фИОЗаведующегоDataGridViewTextBoxColumn
-            // 
-            this.фИОЗаведующегоDataGridViewTextBoxColumn.DataPropertyName = "ФИО заведующего";
-            this.фИОЗаведующегоDataGridViewTextBoxColumn.HeaderText = "ФИО заведующего";
-            this.фИОЗаведующегоDataGridViewTextBoxColumn.Name = "фИОЗаведующегоDataGridViewTextBoxColumn";
-            // 
-            // телефонDataGridViewTextBoxColumn
-            // 
-            this.телефонDataGridViewTextBoxColumn.DataPropertyName = "Телефон";
-            this.телефонDataGridViewTextBoxColumn.HeaderText = "Телефон";
-            this.телефонDataGridViewTextBoxColumn.Name = "телефонDataGridViewTextBoxColumn";
-            // 
-            // объемРеализацииВДеньDataGridViewTextBoxColumn
-            // 
-            this.объемРеализацииВДеньDataGridViewTextBoxColumn.DataPropertyName = "Объем реализации в день";
-            this.объемРеализацииВДеньDataGridViewTextBoxColumn.HeaderText = "Объем реализации в день";
-            this.объемРеализацииВДеньDataGridViewTextBoxColumn.Name = "объемРеализацииВДеньDataGridViewTextBoxColumn";
-            // 
-            // продажиBindingSource
-            // 
-            this.продажиBindingSource.DataMember = "Продажи";
-            this.продажиBindingSource.DataSource = this.tradingUPDataSet;
-            // 
             // продажиTableAdapter
             // 
             this.продажиTableAdapter.ClearBeforeFill = true;
-            // 
-            // артикулТовараDataGridViewTextBoxColumn1
-            // 
-            this.артикулТовараDataGridViewTextBoxColumn1.DataPropertyName = "Артикул товара";
-            this.артикулТовараDataGridViewTextBoxColumn1.HeaderText = "Артикул товара";
-            this.артикулТовараDataGridViewTextBoxColumn1.Name = "артикулТовараDataGridViewTextBoxColumn1";
-            // 
-            // отделDataGridViewTextBoxColumn
-            // 
-            this.отделDataGridViewTextBoxColumn.DataPropertyName = "Отдел";
-            this.отделDataGridViewTextBoxColumn.HeaderText = "Отдел";
-            this.отделDataGridViewTextBoxColumn.Name = "отделDataGridViewTextBoxColumn";
-            // 
-            // датаПродажиDataGridViewTextBoxColumn
-            // 
-            this.датаПродажиDataGridViewTextBoxColumn.DataPropertyName = "Дата продажи";
-            this.датаПродажиDataGridViewTextBoxColumn.HeaderText = "Дата продажи";
-            this.датаПродажиDataGridViewTextBoxColumn.Name = "датаПродажиDataGridViewTextBoxColumn";
-            // 
-            // количествоDataGridViewTextBoxColumn
-            // 
-            this.количествоDataGridViewTextBoxColumn.DataPropertyName = "Количество";
-            this.количествоDataGridViewTextBoxColumn.HeaderText = "Количество";
-            this.количествоDataGridViewTextBoxColumn.Name = "количествоDataGridViewTextBoxColumn";
-            // 
-            // сотрудникиBindingSource
-            // 
-            this.сотрудникиBindingSource.DataMember = "Сотрудники";
-            this.сотрудникиBindingSource.DataSource = this.tradingUPDataSet;
             // 
             // сотрудникиTableAdapter
             // 
             this.сотрудникиTableAdapter.ClearBeforeFill = true;
             // 
-            // логинDataGridViewTextBoxColumn
+            // button1
             // 
-            this.логинDataGridViewTextBoxColumn.DataPropertyName = "Логин";
-            this.логинDataGridViewTextBoxColumn.HeaderText = "Логин";
-            this.логинDataGridViewTextBoxColumn.Name = "логинDataGridViewTextBoxColumn";
-            // 
-            // парольDataGridViewTextBoxColumn
-            // 
-            this.парольDataGridViewTextBoxColumn.DataPropertyName = "Пароль";
-            this.парольDataGridViewTextBoxColumn.HeaderText = "Пароль";
-            this.парольDataGridViewTextBoxColumn.Name = "парольDataGridViewTextBoxColumn";
-            // 
-            // фИОDataGridViewTextBoxColumn
-            // 
-            this.фИОDataGridViewTextBoxColumn.DataPropertyName = "ФИО";
-            this.фИОDataGridViewTextBoxColumn.HeaderText = "ФИО";
-            this.фИОDataGridViewTextBoxColumn.Name = "фИОDataGridViewTextBoxColumn";
-            // 
-            // должностьDataGridViewTextBoxColumn
-            // 
-            this.должностьDataGridViewTextBoxColumn.DataPropertyName = "Должность";
-            this.должностьDataGridViewTextBoxColumn.HeaderText = "Должность";
-            this.должностьDataGridViewTextBoxColumn.Name = "должностьDataGridViewTextBoxColumn";
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(227)))), ((int)(((byte)(131)))));
+            this.button1.Location = new System.Drawing.Point(451, 256);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(119, 46);
+            this.button1.TabIndex = 24;
+            this.button1.Text = "Обновить таблицу";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form2
             // 
@@ -630,18 +644,18 @@
             this.roleTC.ResumeLayout(false);
             this.productsTP.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.productsDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.товарыBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tradingUPDataSet)).EndInit();
             this.ordersTP.ResumeLayout(false);
             this.ordersTP.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ordersDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.отделыViewBindingSource)).EndInit();
             this.versionsTP.ResumeLayout(false);
             this.versionsTP.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.versionsDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.продажиBindingSource)).EndInit();
             this.staffTP.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.staffDataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tradingUPDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.товарыBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.отделыViewBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.продажиBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.сотрудникиBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -705,5 +719,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn парольDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn фИОDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn должностьDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button button1;
     }
 }

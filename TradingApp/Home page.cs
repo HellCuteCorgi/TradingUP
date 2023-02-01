@@ -244,7 +244,12 @@ namespace TradingApp
 
         private void changeButt4_Click(object sender, EventArgs e)
         {
-            Form4 form4 = new Form4();
+            int row = versionsDataGridView.CurrentCell.RowIndex;
+            string s1 = versionsDataGridView[0, row].Value.ToString();
+            string s2 = versionsDataGridView[1, row].Value.ToString();
+            string s3 = versionsDataGridView[2, row].Value.ToString();
+            string s4 = versionsDataGridView[3, row].Value.ToString();
+            Form4 form4 = new Form4(s1, s2, s3, s4);
             form4.Show();
         }
 
@@ -311,6 +316,11 @@ namespace TradingApp
             // TODO: данная строка кода позволяет загрузить данные в таблицу "tradingUPDataSet.Товары". При необходимости она может быть перемещена или удалена.
             this.товарыTableAdapter.Fill(this.tradingUPDataSet.Товары);
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.продажиTableAdapter.Fill(this.tradingUPDataSet.Продажи);
         }
     }
 }
